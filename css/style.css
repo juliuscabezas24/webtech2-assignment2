@@ -1,0 +1,260 @@
+/* CSS Document */
+
+/* Imports */
+
+@font-face {
+    font-family: "PRStark";
+    src: url(../fonts/prstartk.ttf);
+}
+
+/* Defaults */
+
+html {
+    font-family: 'PRStark', sans-serif;
+    font-size: 1.3em;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    color: #fff;
+    background-color: #000;
+}
+
+section {
+    margin-bottom: 30vh;
+    padding-bottom: 30vh;
+    border-bottom: 5px dotted yellow;
+}
+
+/* Nav */
+
+nav {
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0 3vw 0 3vw;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: .5s all ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+    transition: .5s all ease-in-out; 
+}
+
+/* Home Section */
+
+header img {
+    display: block;
+    margin: auto auto 20vh auto;
+}
+
+.pacRotate {
+    transform: rotateY(180deg);
+}
+
+.move {
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+    padding-bottom: 10vh;   
+}
+
+.homeAnimate {
+    animation: pac-left 4s infinite ease-in-out;
+}
+
+#blinkLoop {
+    font-size: 1.5em;
+    text-align: center;
+    animation: blink 2s infinite ease-in-out;
+}
+
+@keyframes pac-left {
+    0% {
+        transform: translate(100vw, 0);
+    }
+    100% {
+        transform: translate(-100vw, 0);
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* High Scores Section */
+
+#score {
+    text-align: center;
+}
+
+#score h2 {
+    font-size: 3.5em;
+    color: #ffe21b;
+}
+
+#score h3 {
+    font-size: 2em;
+}
+
+table {
+    color: #fff;
+    margin: auto;
+}
+
+th, td {
+    font-size: 2em;
+    padding: 1vh 10vw;
+}
+
+tbody tr:nth-child(4n + 1) {
+    color: #f9b200;
+}
+
+tbody tr:nth-child(4n + 2) {
+    color: #fc3f00;
+}
+
+tbody tr:nth-child(4n + 3) {
+    color: #00f9f6;
+}
+
+tbody tr:nth-child(4n + 4) {
+    color: #ff80c2;
+}
+
+/* How to Play Section */
+
+.howAnimate {
+    animation: pac-right 4s infinite ease-in-out;
+}
+
+@keyframes pac-right {
+    0% {
+        transform: translate(-100vw, 0);
+    }
+    100% {
+        transform: translate(100vw, 0);
+    }
+}
+
+.howText {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    font-size: 2em;
+    line-height: 6vh;
+}
+
+.howText h4 {
+    margin-bottom: 0;
+}
+
+.howText p {
+    margin-top: 0;
+}
+
+/* Players Section */
+
+#players {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.ghostRotate {
+    transform: rotateY(180deg);
+}
+
+.charList {
+    font-size: 1.6em;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.charList p:nth-of-type(1) {
+    color: #fc3f00; 
+}
+
+.charList p:nth-of-type(2) {
+    color: #fc3f00; 
+}
+
+.charList p:nth-of-type(3) {
+    color: #ff80c2; 
+}
+
+.charList p:nth-of-type(4) {
+    color: #ff80c2; 
+}
+
+.charList p:nth-of-type(5) {
+    color: #00f9f6; 
+}
+
+.charList p:nth-of-type(6) {
+    color: #00f9f6; 
+}
+
+.charList p:nth-of-type(7) {
+    color: #f9b200; 
+}
+
+.charList p:nth-of-type(8) {
+    color: #f9b200; 
+}
+
+.ghostFlex {
+    display: flex;
+    gap: 2.5vw;
+    align-items: center;
+    justify-content: center;
+    margin: 20vh auto 10vh;
+}
+
+.boxFlex {
+    display: flex;
+    gap: 2.5vw;
+    align-items: center;
+    justify-content: center;
+    margin: auto auto 10vh auto;
+}
+
+.fiftyBox {
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+}
+
+.tenBox {
+    height: 20px;
+    width: 20px;
+    background-color: yellow;
+}
+
+/* Footer Section */
+
+footer {
+    text-align: center;
+}
+
+
